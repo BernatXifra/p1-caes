@@ -29,4 +29,10 @@ public class TestCreditCard {
         assertEquals(100,cc.getMaxCredit());
     }
 
+    @Test
+    void testGetId() {
+        CreditCard cc = new CreditCard("test");
+        assertEquals("test", cc.getId());
+    }
+
 }
